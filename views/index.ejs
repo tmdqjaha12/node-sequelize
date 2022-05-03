@@ -1,0 +1,23 @@
+<%- include('./layout/header') %>
+
+<div class="test">
+  <h1><%= message %></h1>
+</div>
+
+<div class="test">
+  <h3>if test</h3>
+  <% if (!ifs) { %>
+  <div>True</div>
+  <% }else{ %>
+  <div>False</div>
+  <% } %>
+</div>
+
+<div class="test">
+  <h3>for test</h3>
+  <% fors.forEach((data, i) => { %>
+  <div><%= data.label %></div>
+  <% }) %>
+</div>
+
+<%- include('./layout/footer') %>
